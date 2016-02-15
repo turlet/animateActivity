@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#56000000"/>
+
+        <TextView
+            android:id="@+id/detail_bg1"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:background="#00FFFFFF">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@mipmap/question_close"/>
+
+            <TextView
+                android:id="@+id/push_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="25dp"
+                android:visibility="gone"
+                android:text="点击我或左滑关闭"/>
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:visibility="gone"
+                android:text="1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="6dp"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"/>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>
